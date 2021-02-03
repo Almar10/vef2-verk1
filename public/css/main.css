@@ -1,0 +1,27 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+  }
+
+a {
+    color: rgba(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+     color:rgb(0, 0, 0); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.outer {
+    width: 50%;
+    margin:0 auto;
+}
+
+.inner video {
+    width: 100%;
+}
+

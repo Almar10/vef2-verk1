@@ -1,0 +1,14 @@
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<%- include('header') -%>
+<div class = "outer">
+<h2><%= video.title %></h2>
+<div class= "inner">
+<video controls="true" src="<%= video.video %>" preload="auto" width="600" height="400"></video>
+
+<a><%= video.description %></a>
+</div>
+<a href = "/">Til Baka</a>
+</div">
+
+
+<%- include('footer') -%>

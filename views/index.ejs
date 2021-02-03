@@ -1,0 +1,30 @@
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<%- include('header') -%>
+<div class = outer>
+<h1>Fræðslumyndbandaleigan</h1>   
+    <% for(let i=0; i<categories.length; i++){ %>
+        
+        
+        <h2> <%= categories[i].title %> </h2>
+        
+            
+            <% for(let j=0; j<videos.length; j++){ %>
+                
+                <% if(categories[i].videos.includes(videos[j].id)) { %>
+                    
+                        
+                        <a href ="<%= videos[j].id %>">
+                            <h3> <%= videos[j].title %> </h3>
+                            <img src = "<%= videos[j].poster %>"> 
+                            <p><%= videoAgeMap(videos[j].created) %> </p>
+                        </a>
+                    
+                
+                <% } %>    
+              
+            <% } %>
+        
+    <% } %>
+</div>
+
+<%- include('footer') -%>
